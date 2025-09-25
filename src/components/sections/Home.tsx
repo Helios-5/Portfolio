@@ -30,6 +30,9 @@ export const Home: React.FC = () => {
                     <a href="#contact">
                         <Button variant="secondary">Get In Touch</Button>
                     </a>
+                    <a href={portfolioData.resumeUrl} download="RaviKantSingh_Resume.pdf">
+                        <Button>Download Resume</Button>
+                    </a>
                 </div>
                 <div className="mt-8">
                     <SocialButtons />

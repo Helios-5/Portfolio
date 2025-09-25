@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import the Link component
-import { ThemeToggle } from './ThemeToggle';
 
 interface NavbarProps {
     menuOpen: boolean;
@@ -25,7 +24,7 @@ export const Navbar: React.FC<NavbarProps> = ({ menuOpen, setMenuOpen }) => {
                 <div className="flex justify-between items-center h-16">
                     {/* Use the Link component for a proper SPA navigation to home */}
                     <Link to="/" className="font-mono text-xl font-bold text-gray-600">
-                        the<span className="text-blue-600">.AkS</span>
+                        the<span className="text-blue-600">.RkS</span>
                     </Link>
                     <div className="hidden md:flex items-center space-x-8">
                         <NavLink href="#about">About</NavLink>
@@ -34,7 +33,6 @@ export const Navbar: React.FC<NavbarProps> = ({ menuOpen, setMenuOpen }) => {
                         <NavLink href="#experience">Experience</NavLink>
                         <NavLink href="#projects">Projects</NavLink>
                         <NavLink href="#contact">Contact</NavLink>
-                        <ThemeToggle />
                     </div>
                     <div
                         className="w-7 h-5 relative cursor-pointer z-40 md:hidden text-green-400"
